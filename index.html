@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Mercado</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js">
+		
+	</script>
+</head>
+<header>
+	
+</header>
+<body>
+	<div>
+		<div>
+			<h1>Mercado Básico</h1>
+		</div>
+		<form>
+			<div class="produtos">
+				<fieldset>
+					<legend>Selecione e insira a quantidade do produto que deseja</legend>
+					<input type="checkbox" onchange="bananaChange(this)" id="banana"> Banana - R$1,50 <input id="bananaQtd" type="number" max="100" min="1" value="1" style="visibility: hidden"><br>
+					<input type="checkbox" onchange="macaChange(this)" id="maca"> Maça   - R$2,00 <input id="macaQtd" type="number" max="100" min="1" value="1" style="visibility: hidden"><br>
+					<input type="checkbox" onchange="peraChange(this)" id="pera"> Pêra   - R$4,00 <input id="peraQtd" type="number" max="100" min="1" value="1" style="visibility: hidden"><br>			
+				</fieldset>
+				<fieldset>
+					<legend>Ações</legend>
+					<button type="button" onclick="gerarPedido()">Gerar Pedido</button>
+					<button type="button" onclick="gerarRelatorio()">Gerar Relatorio</button>
+				</fieldset>
+			</div>
+		</form>	
+	</div>
+
+	<div id="print"></div>
+	
+</body>
+</html>
