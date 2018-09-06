@@ -1,0 +1,37 @@
+.box2{
+	text-align: center;
+}
+
+body{
+	margin: 0;
+}
+
+.btn{
+	background-color: #0e1d35;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px grey;
+    border-radius: 10%;
+    box-shadow: 4px;
+}
+
+#container{
+	font-family: century gothic;
+}
+
+header{
+	font-family: century gothic;
+	font-size: 150%;
+	margin: 0;
+	background: #0e1d35;
+	color: #ffff;
+	text-align: center;
+	width: 100%;
+}
+
+header h1{
+	margin: 0;
+	width: 100%;
+}

@@ -10,14 +10,11 @@
 	</script>
 </head>
 <header>
-	
+	<h1>Mercado</h1>
 </header>
 <body>
 	<div>
-		<div>
-			<h1>Mercado Básico</h1>
-		</div>
-		<form>
+		<form id="container">
 			<div class="produtos">
 				<fieldset>
 					<legend>Selecione e insira a quantidade do produto que deseja</legend>
@@ -27,8 +24,11 @@
 				</fieldset>
 				<fieldset>
 					<legend>Ações</legend>
-					<button type="button" onclick="gerarPedido()">Gerar Pedido</button>
-					<button type="button" onclick="gerarRelatorio()">Gerar Relatorio</button>
+					<div class="box2">
+						<p>Para gerar Relatório, clique em Gerar Pedido</p>
+						<button class="btn" type="button" onclick="gerarPedido()">Gerar Pedido</button>
+						<button class="btn" type="button" onclick="gerarRelatorio()">Gerar Relatorio</button>
+					</div>
 				</fieldset>
 			</div>
 		</form>	

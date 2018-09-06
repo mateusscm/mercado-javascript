@@ -56,9 +56,10 @@ function gerarPedido(){
 
 }
 
+
 function gerarRelatorio(){
 	var vendidos = {Bananaa: 0, Macaa: 0, Peraa: 0, Total: 0};
-	pedidos.map(function(item){
+	pedidos.filter(function(item){
 		if("Bananaa" in item){
 			vendidos['Bananaa'] = vendidos['Bananaa'] + item['Bananaa'];}
 		if("Macaa" in item){
